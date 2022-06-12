@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{79DE5C48-E5BD-DBE3-EED5-66BA5A344245}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>utility</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\BIN\Debug\x86_64\utility\bin\</OutDir>
+    <IntDir>..\..\BIN\Debug\x86_64\utility\bin-int\</IntDir>
+    <TargetName>utility</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\BIN\Debug\x86\utility\bin\</OutDir>
+    <IntDir>..\..\BIN\Debug\x86\utility\bin-int\</IntDir>
+    <TargetName>utility</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\BIN\Release\x86_64\utility\bin\</OutDir>
+    <IntDir>..\..\BIN\Release\x86_64\utility\bin-int\</IntDir>
+    <TargetName>utility</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\BIN\Release\x86\utility\bin\</OutDir>
+    <IntDir>..\..\BIN\Release\x86\utility\bin-int\</IntDir>
+    <TargetName>utility</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;UTIL_USE_CPP_17;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\utility;include\utility\Vector;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;UTIL_USE_CPP_17;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\utility;include\utility\Vector;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>RELEASE;UTIL_USE_CPP_17;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\utility;include\utility\Vector;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>RELEASE;UTIL_USE_CPP_17;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\utility;include\utility\Vector;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorAllCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorBCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorDCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorFCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorLCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorLdCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorTCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorUi16Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorUi32Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorUi64Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorUi8Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorUlCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\VectorWcCxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\Vectori16Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\Vectori32Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\Vectori64Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\Cxpr\Vectori8Cxpr.h" />
+    <ClInclude Include="include\utility\Vector\VectorAll.h" />
+    <ClInclude Include="include\utility\Vector\VectorAllwCxpr.h" />
+    <ClInclude Include="include\utility\Vector\VectorB.h" />
+    <ClInclude Include="include\utility\Vector\VectorD.h" />
+    <ClInclude Include="include\utility\Vector\VectorDCxpr.h" />
+    <ClInclude Include="include\utility\Vector\VectorF.h" />
+    <ClInclude Include="include\utility\Vector\VectorL.h" />
+    <ClInclude Include="include\utility\Vector\VectorLd.h" />
+    <ClInclude Include="include\utility\Vector\VectorT.h" />
+    <ClInclude Include="include\utility\Vector\VectorUi16.h" />
+    <ClInclude Include="include\utility\Vector\VectorUi32.h" />
+    <ClInclude Include="include\utility\Vector\VectorUi64.h" />
+    <ClInclude Include="include\utility\Vector\VectorUi8.h" />
+    <ClInclude Include="include\utility\Vector\VectorUl.h" />
+    <ClInclude Include="include\utility\Vector\VectorWc.h" />
+    <ClInclude Include="include\utility\Vector\Vectori16.h" />
+    <ClInclude Include="include\utility\Vector\Vectori32.h" />
+    <ClInclude Include="include\utility\Vector\Vectori64.h" />
+    <ClInclude Include="include\utility\Vector\Vectori8.h" />
+    <ClInclude Include="include\utility\allutil.h" />
+    <ClInclude Include="include\utility\datatypes.h" />
+    <ClInclude Include="include\utility\filesystemutil.h" />
+    <ClInclude Include="include\utility\iocautil.h" />
+    <ClInclude Include="include\utility\iocautil_old.h" />
+    <ClInclude Include="include\utility\ioutil.h" />
+    <ClInclude Include="include\utility\numberutil.h" />
+    <ClInclude Include="include\utility\stlheaderutil.h" />
+    <ClInclude Include="include\utility\stringutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Vector\VectorB.cpp" />
+    <ClCompile Include="src\Vector\VectorD.cpp" />
+    <ClCompile Include="src\Vector\VectorF.cpp" />
+    <ClCompile Include="src\Vector\VectorL.cpp" />
+    <ClCompile Include="src\Vector\VectorLd.cpp" />
+    <ClCompile Include="src\Vector\VectorUi16.cpp" />
+    <ClCompile Include="src\Vector\VectorUi32.cpp" />
+    <ClCompile Include="src\Vector\VectorUi64.cpp" />
+    <ClCompile Include="src\Vector\VectorUi8.cpp" />
+    <ClCompile Include="src\Vector\VectorUl.cpp" />
+    <ClCompile Include="src\Vector\VectorWc.cpp" />
+    <ClCompile Include="src\Vector\Vectori16.cpp" />
+    <ClCompile Include="src\Vector\Vectori32.cpp" />
+    <ClCompile Include="src\Vector\Vectori64.cpp" />
+    <ClCompile Include="src\Vector\Vectori8.cpp" />
+    <ClCompile Include="src\filesystemutil.cpp" />
+    <ClCompile Include="src\stringutil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
